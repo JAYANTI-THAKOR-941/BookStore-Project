@@ -1,0 +1,79 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+
+ table {
+     width: 90%;
+     margin: 4% auto;
+ }
+
+ table,
+ tr,
+ td,
+ th {
+     border: 1px solid black;
+     border-collapse: collapse;
+     padding: 8px;
+ }
+
+ img {
+     width: 80px;
+ }
+ .title{
+    margin: 2% 2.5%;
+ }
+ .add-btn{
+    padding: 12px 28px;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    margin: 0 2.5%;
+ }
+
+ .header {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+     align-items: center;
+     box-shadow: 0 4px 8px rgba(0,0,0,.1);
+ }
+
+ .logo h1 {
+     margin-left: 30px;
+ }
+
+ .btn button {
+     padding: 12px 26px;
+     border: 0;
+     border-radius: 5px;
+     background-color: red;
+     color: white;
+     cursor: pointer;
+ }
+
+ .edit-form{
+    width: 800px;
+    margin: 4% auto;
+    padding: 20px;
+ }
+ .edit-form input{
+    width: 100%;
+    margin: 20px 0;
+    padding: 14px;
+ }
+  .edit-form .submit-btn{
+    width: 200px;
+    background-color: green;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+ }
+ .nav-links a{
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+    font-size: 22px;
+ }

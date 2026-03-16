@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Book</title>
-</head>
-<body>
-    <form action="/edit/<%= book.id %>" method="POST">
+    <%- include('header',{title:"Update Book"}) %>
+    <form class="edit-form" action="/edit/<%= book.id %>" method="POST">
+        <h1>Update Book</h1>
         <input type="text" name="title" value="<%= book.title %>">
         <input type="text" name="description" value="<%= book.description %>">
         <input type="text" name="price" value="<%= book.price %>">
         <input type="text" name="publish_date" value="<%= book.publish_date %>">
         <input type="text" name="author" value="<%= book.author %>">
-        <input type="submit">
+        <input type="submit" class="submit-btn">
     </form>
-   
-</body>
-</html>
