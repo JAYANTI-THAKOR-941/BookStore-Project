@@ -39,6 +39,10 @@ export const getAllBooks = async(req,res)=>{
 
 export const bookManagement = async(req,res)=>{
     try{
+        const userId =  req.cookies.userid;
+        if(!userId){
+           return res.redirect('/login');
+        }
         const books = await Books.find();
         res.render('bookManagement',{books});
     }
